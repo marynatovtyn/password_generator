@@ -103,7 +103,7 @@ body {
     height: 20px;
     left: 10px;
     position: absolute;
-    background: url(./pics/Lightning_bolt.svg) no-repeat left center;
+    background: url(../pics/Lightning_bolt.svg) no-repeat left center;
 }
 
 .desc__generate-btn:hover, .desc__generate-btn:active, .desc__generate-btn:focus {
