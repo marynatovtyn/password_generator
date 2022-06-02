@@ -1,0 +1,132 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/inter-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/inter-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/inter-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/inter-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/inter-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/inter-v11-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/inter-v11-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/inter-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/inter-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/inter-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/inter-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/inter-v11-latin-500.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/karla-v22-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/karla-v22-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/karla-v22-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/karla-v22-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/karla-v22-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/karla-v22-latin-800.svg#Karla') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: #1F2937;
+    font-family: Inter;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper__desc {
+    padding: 120px 240px 40px 0px;
+    border-bottom: #2F3E53 solid;
+}
+
+.desc__header {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+}
+
+.header__green {
+    color: #4ADF86;
+    padding-bottom: 10px;
+}
+
+.desc__info {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+    padding-bottom: 40px;
+}
+
+.desc__generate-btn {
+    position: relative;
+    background-color:  #10B981;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 30px;
+}
+
+.desc__generate-btn::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    position: absolute;
+    background: url(./pics/Lightning_bolt.svg) no-repeat left center;
+}
+
+.desc__generate-btn:hover, .desc__generate-btn:active, .desc__generate-btn:focus {
+    transform: scale(1.05);
+}
+
+.wrapper__output {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+    padding-top: 60px;
+}
+
+.output__option {
+    background: #273549;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #55F991;
+}
