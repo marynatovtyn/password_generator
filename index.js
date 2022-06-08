@@ -8,6 +8,10 @@ let thirdOption = document.getElementById("third__option")
 let forthOption = document.getElementById("forth__option")
 
 function generatePasswords() {
+    firstOption.textContent = ""
+    secondOption.textContent = ""
+    thirdOption.textContent = ""
+    forthOption.textContent = ""
     for (i = 0; i < 11; i++) {
         let randomNumber = Math.floor(Math.random() * 69)
         firstOption.textContent += characters[randomNumber]
