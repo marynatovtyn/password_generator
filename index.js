@@ -12,20 +12,29 @@ function generatePasswords() {
     secondOption.textContent = ""
     thirdOption.textContent = ""
     forthOption.textContent = ""
-    for (i = 0; i < 11; i++) {
-        let randomNumber = Math.floor(Math.random() * 69)
-        firstOption.textContent += characters[randomNumber]
-    }
-    for (i = 0; i < 11; i++) {
-        let randomNumber = Math.floor(Math.random() * 69)
-        secondOption.textContent += characters[randomNumber]
-    }
-    for (i = 0; i < 11; i++) {
-        let randomNumber = Math.floor(Math.random() * 69)
-        thirdOption.textContent += characters[randomNumber]
-    }
-    for (i = 0; i < 11; i++) {
-        let randomNumber = Math.floor(Math.random() * 69)
-        forthOption.textContent += characters[randomNumber]
+    let lengthEl = Number(document.getElementById("input_el").value)
+    if (Number.isInteger(lengthEl) && lengthEl <21) {
+        for (i = 0; i < lengthEl; i++) {
+            let randomNumber = Math.floor(Math.random() * 69)
+            firstOption.textContent += characters[randomNumber]
+        }
+        for (i = 0; i < lengthEl; i++) {
+            let randomNumber = Math.floor(Math.random() * 69)
+            secondOption.textContent += characters[randomNumber]
+        }
+        for (i = 0; i < lengthEl; i++) {
+            let randomNumber = Math.floor(Math.random() * 69)
+            thirdOption.textContent += characters[randomNumber]
+        }
+        for (i = 0; i < lengthEl; i++) {
+            let randomNumber = Math.floor(Math.random() * 69)
+            forthOption.textContent += characters[randomNumber]
+        }
+    } else if (lengthEl > 20) {
+        alert("To big. Please, enter a smaller number!")
+        console.log(typeof(lengthEl))
+    } else {
+        alert("Please, enter a number!")
+        console.log(typeof(lengthEl))
     }
 }
