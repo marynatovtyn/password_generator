@@ -61,7 +61,7 @@ body {
     border-bottom: #2F3E53 solid;
 }
 
-.desc__header {
+.wrapper__header {
     font-family: Karla;
     font-style: normal;
     font-weight: 800;
@@ -70,21 +70,44 @@ body {
     letter-spacing: -0.025em;
 }
 
-.header__green {
+.wrapper__header-green {
     color: #4ADF86;
     padding-bottom: 10px;
 }
 
-.desc__info {
+.wrapper__info {
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #D5D4D8;
     padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
-.desc__generate-btn {
+.wrapper__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.wrapper__text {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5; 
+    width: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+.wrapper__button {
     position: relative;
     background-color:  #10B981;
     font-family: Inter;
@@ -97,7 +120,7 @@ body {
     padding: 10px 10px 10px 30px;
 }
 
-.desc__generate-btn::after {
+.wrapper__button::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -106,7 +129,7 @@ body {
     background: url(../pics/Lightning_bolt.svg) no-repeat left center;
 }
 
-.desc__generate-btn:hover, .desc__generate-btn:active, .desc__generate-btn:focus {
+.wrapper__button:hover, .wrapper__button:active, .wrapper__button:focus {
     transform: scale(1.05);
 }
 
