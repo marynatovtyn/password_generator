@@ -56,35 +56,58 @@ body {
     justify-content: flex-start;
 }
 
-.wrapper__desc {
+.input {
     padding: 120px 240px 40px 0px;
     border-bottom: #2F3E53 solid;
 }
 
-.desc__header {
+.input__title {
     font-family: Karla;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.025em;
-}
-
-.header__green {
-    color: #4ADF86;
     padding-bottom: 10px;
 }
 
-.desc__info {
+.input__title_success {
+    color: #4ADF86;
+}
+
+.input__subtitle {
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #D5D4D8;
     padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
-.desc__generate-btn {
+.input__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.input__text {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5; 
+    width: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+.input__button {
     position: relative;
     background-color:  #10B981;
     font-family: Inter;
@@ -97,7 +120,7 @@ body {
     padding: 10px 10px 10px 30px;
 }
 
-.desc__generate-btn::after {
+.input__button::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -106,11 +129,11 @@ body {
     background: url(../pics/Lightning_bolt.svg) no-repeat left center;
 }
 
-.desc__generate-btn:hover, .desc__generate-btn:active, .desc__generate-btn:focus {
+.input__button:hover, .input__button:active, .input__button:focus {
     transform: scale(1.05);
 }
 
-.wrapper__output {
+.output {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;

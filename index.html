@@ -10,12 +10,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="wrapper__desc">
-            <h1 class="desc__header">Generate a <h1 class="desc__header header__green">random password</h1></h1>
-            <p class="desc__info">Never use an insecure password again.</p>
-            <button type="submit" class="desc__generate-btn" onclick="generatePasswords()">Generate passwords</button>
+        <div class="input">
+            <h1 class="input__title">Generate a <h1 class="input__title input__title_success">random password</h1></h1>
+            <p class="input__subtitle">Never use an insecure password again.</p>
+            <form action="#" class="input__form">
+                <input id="input_el" type="text" class="input__text" placeholder="Enter password lenght">
+                <button type="submit" class="input__button" onclick="generatePasswords()">Generate passwords</button>
+            </form>
         </div>
-        <div class="wrapper__output">
+        <div class="output">
             <p class="output__option" id="first__option"></p>
             <p class="output__option" id="second__option"></p>
             <p class="output__option" id="third__option"></p>
